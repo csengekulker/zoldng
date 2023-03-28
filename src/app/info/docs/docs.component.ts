@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import docsJson from './docs.json'
 
-// TODO: scroll to top button, long page
+// FIXME: ALL static content typos
 
 @Component({
   selector: 'app-docs',

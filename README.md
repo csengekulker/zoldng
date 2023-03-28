@@ -1,29 +1,41 @@
 # Zöldpont Masszázs Stúdió
 
-## Portfólió weblap 
+## Portfólió weboldal 
+
+Ez a tároló a stúdió weboldalának forráskódját, valamint a hozzátartozó állományokat tartalmazza. A látogatók böngészhetnek a szolgáltatások között, megismerkedhetnek a terapeutával, ha pedig kedvet kaptak egy testi-lelki felfrissüléshez, bejelentkezhetnek kezelésre az online időpontfoglaló rendszeren keresztül.
 
 
 
-## Development server
+## Szolg
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Az oldalon részletes bemutatásra kerülnek az igényelhető terápiák, azok elérhető változatai, melyek különféle testrészeket érintenek, az igények széleskörű kielégítésére törekedvén. 
 
-## Code scaffolding
+## Book
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A weboldal beépített, saját foglalási rendszerrel dolgozik, melyet bárki használhat, éppen ezért különös figyelmet fordítunk az adatok helyénvaló és jogtiszta kezelésére. *jelen verzioban*
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Beüzemelési lépések
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Git tároló klónozása
 
-## Further help
+```console
+git clone https://github.com/csengekulker/zoldng.git
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Függőségek telepítése
+
+```console
+npm install
+```
+
+3. Fejlesztői szerver indítása
+
+```console
+npm start
+```
+
+Böngészőben [itt](http://localhost:4200)

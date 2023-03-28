@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit{
   buttonText :string = " Információk"
 
-
   ngOnInit(): void { }
 
 }

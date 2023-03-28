@@ -27,13 +27,13 @@
         },
         {
             "id": "six",
-            "q": "Milyen ruhában jöjjek, hogyan öltözzek? FIXME",
+            "q": "Milyen ruhában jöjjek, hogyan öltözzek?",
             "a": "Olajos masszázsra mindegy milyen ruhában jön, mivel a kezelés fehérneműben történik. Korokan masszázs alatt célszerú vékony laza pamutruhát és pólót viselni. Ha csak Talpmasszázs kezelésre jössz  célszerú vékony laza pamutruhát viselni. "
         },
         {
             "id": "seven",
-            "q": "Mikor ellenjavallott a masszázs? FIXME",
-            "a": "Láz\\n Fertőző betegség"
+            "q": "Mikor ellenjavallott a masszázs?",
+            "a": "Lásd ÁSZF"
         },
         {
             "id": "eight",

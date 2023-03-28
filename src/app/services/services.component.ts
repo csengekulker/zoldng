@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../shared/api.service';
 import servicesJson from './services.json'
 import { Router } from '@angular/router';
-import { BookingComponent } from '../booking/booking.component';
 import { EmitterService } from '../emitter.service';
 import { PassService } from '../shared/pass.service';
 
@@ -20,11 +19,11 @@ export class ServicesComponent implements OnInit {
     private router: Router
   ) { }
 
-  services!: any // JSON
+  services!: any
   fetchedServices !: any
   fetchedTypes!:any
 
-  //TODO: pass desired service details to booking
+  // FIXME: autoload dur and price also when redirected
 
   onClick(event: any) {
     let sid = event.path[7].id
@@ -34,7 +33,6 @@ export class ServicesComponent implements OnInit {
     this.pass.setType(tid)
     this.router.navigate(['/booking'])
 
-    //need emitter to fire autoSelect()
     this.emitter.onButtonClick()
 
   }

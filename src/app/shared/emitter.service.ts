@@ -9,9 +9,6 @@ export class EmitterService {
   constructor() { }
  
   onButtonClick() {
-    console.log('emitter fired');
-
     this.event.emit();
-    
   }
 }

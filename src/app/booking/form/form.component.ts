@@ -33,9 +33,7 @@ export class FormComponent implements OnInit {
 
   bookingId!:number
 
-  autoSelect() {
-    console.log('autoselect fired');
-    
+  autoSelect() {    
     // this.pickedType = ''
     this.pass.currentService.subscribe({
       next: (sid:number) => {
@@ -61,16 +59,6 @@ export class FormComponent implements OnInit {
     })
   }
 
-  // collectAddress(e:any) {
-  //   const target = this.form.value
-
-  //   let zipCode: number = target.zipCode!
-  //   let city: string = target.city!
-  //   let address:string = target.address!
-
-  //   this.form.value.fullAddress = `${zipCode} ${city}, ${address}`
-  // }
-
   collectPersonalDetails(): any {
 
     const target = this.form.value
@@ -85,8 +73,6 @@ export class FormComponent implements OnInit {
 
     let fullAddress:string = `${zipCode} ${city}, ${address}`
     console.log(fullAddress);
-    
-
 
     let data = {
       fullName,
@@ -99,7 +85,7 @@ export class FormComponent implements OnInit {
     return data
   }
 
-  // FIXME: a requiredtrue ha igaz csak akkor rakja be a dob-ot a summaryba (??)
+  // FIXME: checkbox require, fill out sumary
 
   filterApts() {
 
@@ -127,7 +113,7 @@ export class FormComponent implements OnInit {
 
   servicePicked(event:any) { 
     console.log(event.target.value)
-    this.pickedService = this.services[1]
+    this.pickedService = this.services[event.target.value - 1]
   }
 
   typePicked(event?: any, id?:number) {    
