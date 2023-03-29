@@ -2,20 +2,16 @@
 
 ## Portfólió weboldal 
 
-Ez a tároló a stúdió weboldalának forráskódját, valamint a hozzátartozó állományokat tartalmazza. A látogatók böngészhetnek a szolgáltatások között, megismerkedhetnek a terapeutával, ha pedig kedvet kaptak egy testi-lelki felfrissüléshez, bejelentkezhetnek kezelésre az online időpontfoglaló rendszeren keresztül.
+Ez a tároló a Zöldpont Masszázs Stúdió weboldalának forráskódját, valamint a hozzátartozó állományokat tartalmazza. A látogatók böngészhetnek a szolgáltatások között, megismerkedhetnek a terapeutával, ha pedig kedvet kaptak egy testi-lelki felfrissüléshez, bejelentkezhetnek kezelésre az oldal időpontfoglaló rendszerén keresztül.
 
-
-
-## Szolg
+## Masszázsterápiák
 
 Az oldalon részletes bemutatásra kerülnek az igényelhető terápiák, azok elérhető változatai, melyek különféle testrészeket érintenek, az igények széleskörű kielégítésére törekedvén. 
 
-## Book
+## Egyszerű foglalás
 
-A weboldal beépített, saját foglalási rendszerrel dolgozik, melyet bárki használhat, éppen ezért különös figyelmet fordítunk az adatok helyénvaló és jogtiszta kezelésére. *jelen verzioban*
-
-
-
+A weboldal beépített, saját foglalási rendszerrel dolgozik, melyet bárki használhat, éppen ezért különös figyelmet fordítunk az adatok helyénvaló és jogtiszta kezelésére. 
+*Jelen verzióban ez a rész hiányos, a bővítési, fejlesztési tervek között szerepel.*
 
 
 ## Beüzemelési lépések
@@ -38,4 +34,6 @@ npm install
 npm start
 ```
 
-Böngészőben [itt](http://localhost:4200)
+Böngészőben a http://localhost:4200 címen megtekinthető a webes kliens.
+
+> Figyelem! Az oldalon szerepelnek adatbázisból hívott, statikus tartalmak. Figyelj, hogy megtekintéskor külön terminál ablakban fusson a REST API kiszolgáló.

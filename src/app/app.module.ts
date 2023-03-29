@@ -24,6 +24,7 @@ import { ButtonComponent } from './info/button/button.component';
 import { BookingInfoComponent } from './booking/info/info.component';
 import { FormComponent } from './booking/form/form.component';
 import { CommonModule } from '@angular/common';
+import { LicenseComponent } from './info/license/license.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { CommonModule } from '@angular/common';
     DocsComponent,
     NotfoundComponent,
     ButtonComponent,
-    FormComponent
+    FormComponent,
+    LicenseComponent
   ],
   imports: [
     BrowserModule,

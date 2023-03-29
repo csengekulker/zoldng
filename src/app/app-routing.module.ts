@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { DocsComponent } from './info/docs/docs.component';
 import { FaqComponent } from './info/faq/faq.component';
 import { InfoComponent } from './info/info.component';
+import { LicenseComponent } from './info/license/license.component';
 import { PricelistComponent } from './info/pricelist/pricelist.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ServicesComponent } from './services/services.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'info/faq', component: FaqComponent},
   {path: 'info/pricing', component: PricelistComponent},
   {path: 'info/docs', component: DocsComponent},
+  {path: 'info/license', component: LicenseComponent},
   {path: '**', component: NotfoundComponent}
 
 ];
