@@ -42,7 +42,7 @@
     <div class="focus p-3">
         <p>Alábbi listában a foglalható időpontokat láthatod a választott szolgáltatásra.</p>
         <div>
-            <select id="chooseType" class="form-select" (change)="aptPicked($event)" formControlName="aptId">
+            <select id="chooseApt" class="form-select" (change)="aptPicked($event)" formControlName="aptId">
                 <option selected id="selected" value="Choose..">Válasszon..</option>
                 <option  *ngFor="let apt of fitAppointments" value="{{apt.id}}"> {{apt.id}} | {{apt.date}} | {{apt.start}} - {{apt.end}}</option>
             </select>

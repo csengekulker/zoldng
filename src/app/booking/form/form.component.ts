@@ -174,7 +174,7 @@ export class FormComponent implements OnInit {
                 modal.innerHTML = 'Check your email'
                 submit.remove()
                 this.form.reset()
-              }              
+              }
             },
             error: (err: any) => {
               console.log(err);
