@@ -44,7 +44,7 @@
         <div>
             <select id="chooseType" class="form-select" (change)="aptPicked($event)" formControlName="aptId">
                 <option selected id="selected" value="Choose..">Válasszon..</option>
-                <option  *ngFor="let apt of fitAppointments" value="{{apt.id}}">{{apt.date}} | {{apt.start}} - {{apt.end}}</option>
+                <option  *ngFor="let apt of fitAppointments" value="{{apt.id}}"> {{apt.id}} | {{apt.date}} | {{apt.start}} - {{apt.end}}</option>
             </select>
         </div>
     </div>
@@ -67,7 +67,7 @@
             <input id="email" type="text" placeholder="E-mail cím" formControlName="email" class="form-control">
         </div>
         <div class="col-md-6 mb-2">
-            <input id="phone" type="text" placeholder="Telefonszám" formControlName="phone" class="form-control">
+            <input id="phone" type="tel" placeholder="Telefonszám" formControlName="phone" class="form-control">
         </div>
     </div>
 
@@ -118,6 +118,7 @@
                     </p>
                     <h4>Időpont részletei</h4>
                     <p>
+                        <!-- FIXME: cannot read pickedApt is undefined -->
                         <strong>Dátum: </strong>{{pickedApt.date}}<br>
                         <strong>Időpont kezdete: </strong>{{pickedApt.start}}<br>
                         <strong>Időpont vége: </strong>{{pickedApt.end}}
@@ -134,7 +135,7 @@
 
 
                 </div>
-
+                <!-- FIX: vissya gombra set modalcontent to original summary -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
                     <button type="submit" class="btn btn-primary submitBtn">Foglalás indítása</button>

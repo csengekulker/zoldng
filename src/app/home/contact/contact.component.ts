@@ -10,6 +10,10 @@ import { ApiService } from '../../shared/api.service';
 export class ContactComponent implements OnInit {
 
   contactForm !: FormGroup
+  constructor(
+    private formBuilder: FormBuilder,
+    private api: ApiService
+  ) {}
 
   collectMessageDetails():any {
     const target = this.contactForm.value
@@ -33,25 +37,28 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     let messageData = this.collectMessageDetails()   
     const modal = document.querySelector('.modal-body') 
+    const header = document.querySelector('.modal-title')
 
     this.api.sendMessageDetails(messageData).subscribe({
       next: (data: any) => {
 
         if (data.success) {
 
-          if (modal !=null) {
-            modal.innerHTML = "OK"
+          if (modal !=null && header != null ) {
+            header.innerHTML = "Üzenet elküldve!"
+            modal.innerHTML = 'Hamarosan jelentkezünk.'
           }
           
           this.contactForm.reset()
         }
       },
       error: (err: any) => {
-        if (modal !=null) {
+        if (modal !=null && header != null) {
+          modal.innerHTML = ''
+          header.innerHTML = 'Sikertelen küldés'
           let e: keyof typeof err.error.message
           for (e in err.error.message) {
             let v = err.error.message[e]
-            console.log(v[0]);
             modal.innerHTML += (v[0] + '<br>') 
           }
         }
@@ -60,10 +67,7 @@ export class ContactComponent implements OnInit {
     
   }
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private api: ApiService
-  ) {}
+
   ngOnInit(): void {
 
     this.contactForm = this.formBuilder.group({

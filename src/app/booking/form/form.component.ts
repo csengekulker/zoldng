@@ -139,31 +139,18 @@ export class FormComponent implements OnInit {
     
   }
 
-  fetchBookingById(id:number) {
-    this.api.fetchBookingById(id).subscribe({
-      next: (data:any) => {
-        // console.log(data);
-        if (data.success) {
-          alert("Sikeres foglalás")
-          this.form.reset()
-        }
-        
-      },
-      error: (err:any) => {
-        console.log(err);
-        
-      }
-    })
-  }
-
   onSubmit() { 
     const target = this.form.value
     const modal = document.querySelector('.modal-body') 
-
+    const header = document.querySelector('.modal-title')
+    const submit = document.querySelector('.submitBtn')
 
     let clientData = this.collectPersonalDetails()
-    console.log(clientData);
-    
+    console.log(clientData)
+
+    if (target.accept == false && modal) {
+      modal.innerHTML += 'fogadd el'
+    } else {  
 
     this.api.sendClientDetails(clientData).subscribe({
       next: (data: any) => {
@@ -180,19 +167,26 @@ export class FormComponent implements OnInit {
           
           this.api.sendReservation(bookingData).subscribe({
             next: (data:any) => {
-              if (data.success) {
+              if (data.success && header && modal && submit) {
                 this.bookingId = data.data.id
-                this.fetchBookingById(this.bookingId)
+                // this.fetchBookingById(this.bookingId)
+                header.innerHTML = "Sikeres foglalás"
+                modal.innerHTML = 'Check your email'
+                submit.remove()
+                this.form.reset()
               }              
             },
             error: (err: any) => {
+              console.log(err);
+              
               if (modal !=null) {
+                
                 // modal.innerHTML = ''
                 let e: keyof typeof err.error.message
                 for (e in err.error.message) {
                   let v = err.error.message[e]
                   console.log(v[0]);
-                  // modal.innerHTML += (v[0] + '<br>')
+                  modal.innerHTML += (v[0] + '<br>')
                 }
               }
             }
@@ -200,17 +194,19 @@ export class FormComponent implements OnInit {
         }
       },
       error: (err: any) => {
+        console.log(err);
+        
         if (modal !=null) {
-          // modal.innerHTML = ''
+          modal.innerHTML = ''
           let e: keyof typeof err.error.message
           for (e in err.error.message) {
             let v = err.error.message[e]
             console.log(v[0]);
-            // modal.innerHTML += (v[0] + '<br>')            
+            modal.innerHTML += (v[0] + '<br>')            
           }
         }
       }
-    })
+    })}
   }
 
   fetchOpenApts(): any {
@@ -264,7 +260,6 @@ export class FormComponent implements OnInit {
       }
     })
 
-    // FIXME: date validation
     this.form = this.build.group({
       serviceId: [V.required],
       typeId: [V.required],
@@ -272,9 +267,9 @@ export class FormComponent implements OnInit {
       fullName: ['', V.required],
       dob: ['', V.required, V.pattern(/^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$/)],
       email: ['', [V.required, V.email]],
-      phone: ['', V.required],
+      phone: ['', V.required, V.pattern('[- +()0-9]+')],
       zipCode: ['', V.required],
-      city: ['', V.required],
+      city: ['', V.required, V.pattern('[a-zA-Z]')],
       address: ['', V.required],
       fullAddress: ['', V.required],
       accept: [false, V.requiredTrue]

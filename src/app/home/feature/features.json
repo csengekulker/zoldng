@@ -12,7 +12,7 @@
         {
             "title": "Kukkants be a stúdióba!",
             "text": "Nézd meg a stúdióról készült képeket és ha közel érzed magadhoz a hangulatát vagy úgy érzed eljött az ideje a relaxálásnak akkor jelentkezz be hozzám te is egy jó kis évindító felfrissülésre és ne várj addig, míg összeomlik a rendszer.",
-            "button": "Képgyűjtemény",
+            "button": "Képek",
             "refPath": "/gallery",
             "imagePath": "../assets/images/features/gallery.png",
             "alttext": "Gallery",
