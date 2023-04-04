@@ -5,8 +5,8 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class PassService {
-  private service = new BehaviorSubject(0)
-  private type = new BehaviorSubject(0)
+  private service = new BehaviorSubject(1)
+  private type = new BehaviorSubject(1)
   currentService = this.service.asObservable()
   currentType = this.type.asObservable()
 

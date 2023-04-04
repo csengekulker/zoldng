@@ -96,8 +96,8 @@
 
 
     <div class="row my-4">
-        <button class="btn" id="submitBtn" type="button" data-bs-toggle="modal" data-bs-target="#confirmModal">
-            Tovább az áttekintéshez
+        <button class="btn" id="submitBtn" type="submit" data-bs-toggle="modal" data-bs-target="#confirmModal">
+            Időpont lefoglalása
         </button>
     </div>
     
@@ -109,36 +109,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h4>Szolgáltatás részletei</h4>
-                    <p>
-                        <!-- <strong>Kezelés: </strong>{{pickedService.name}}<br> -->
-                        <strong>Típus: </strong>{{pickedType.name}}<br>
-                        <strong>Időtartam: </strong>{{pickedType.duration}}<br>
-                        <strong>Ár: </strong>{{pickedType.price}}
-                    </p>
-                    <h4>Időpont részletei</h4>
-                    <p>
-                        <!-- FIXME: cannot read pickedApt is undefined -->
-                        <strong>Dátum: </strong>{{pickedApt.date}}<br>
-                        <strong>Időpont kezdete: </strong>{{pickedApt.start}}<br>
-                        <strong>Időpont vége: </strong>{{pickedApt.end}}
-
-                    </p>
-                    <h4>Személyes adatok</h4>
-                    <p>
-                        <strong>Teljes név: </strong>{{form.value.fullName}}<br>
-                        <strong>Születési idő: </strong>{{form.value.dob}}<br>
-                        <strong>E-mail: </strong>{{form.value.email}}<br>
-                        <strong>Telefon: </strong>{{form.value.phone}}<br>
-                        <strong>Cím: </strong>{{form.value.zipcode}} {{form.value.city}} {{form.value.address}}
-                    </p>
-
-
                 </div>
-                <!-- FIX: vissya gombra set modalcontent to original summary -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
-                    <button type="submit" class="btn btn-primary submitBtn">Foglalás indítása</button>
+                    <button type="button" class="btn btn-primary submitBtn">Foglalás indítása</button>
 
                 </div>
             </div>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../shared/api.service';
 import servicesJson from './services.json'
 import { Router } from '@angular/router';
-import { EmitterService } from '../emitter.service';
+import { EmitterService } from '../shared/emitter.service';
 import { PassService } from '../shared/pass.service';
 
 @Component({

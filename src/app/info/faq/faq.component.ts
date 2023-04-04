@@ -11,6 +11,11 @@ export class FaqComponent implements OnInit{
 
   faqs = faqJson.faqs
 
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    this.faqs.forEach((f:any) => {
+      console.log(f);
+      
+    })
+  }
 
 }
