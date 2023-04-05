@@ -12,19 +12,19 @@ export class NavigationComponent implements OnInit {
 
     this.buttons = [
       [
-        'Home',
+        'Főoldal',
         ''
       ],
       [
-        'Services',
+        'Masszázsok',
         '/services'
       ],
       [
-        'Booking',
+        'Foglalás',
         '/booking'
       ],
       [
-        'Gallery',
+        'Galéria',
         '/gallery'
       ]
     ]

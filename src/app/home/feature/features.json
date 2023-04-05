@@ -11,7 +11,7 @@
         },
         {
             "title": "Kukkants be a stúdióba!",
-            "text": "Nézd meg a stúdióról készült képeket és ha közel érzed magadhoz a hangulatát vagy úgy érzed eljött az ideje a relaxálásnak akkor jelentkezz be hozzám te is egy jó kis évindító felfrissülésre és ne várj addig, míg összeomlik a rendszer.",
+            "text": "Nézd meg a stúdióról készült képeket és egyéb tartalmakat. Őszintén remélem, hogy e gyűjtemény kedvcsinálóként fog szolgálni egy kellemes masszázshoz számodra.",
             "button": "Képek",
             "refPath": "/gallery",
             "imagePath": "../assets/images/features/gallery.png",
@@ -29,7 +29,7 @@
         },
         {
             "title": "Bejelentkezés",
-            "text": "Set up an appointment and come refresh your body and soul Proin et tortor diam. Donec ut mattis nibh. Etiam tellus eros, gravida non congue ut, consectetur in justo.",
+            "text": "Ha úgy érzed, eljött az ideje a relaxálásnak, akkor jelentkezz be hozzám te is egy jó kis felfrissülésre és ne várj addig, míg összeomlik a rendszer.",
             "button": "Foglalás",
             "refPath": "/booking",
             "imagePath": "../assets/images/features/booking.png",

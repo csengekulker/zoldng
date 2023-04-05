@@ -1,19 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+const inner = document.querySelector('.carousel-inner')
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss']
 })
-export class GalleryComponent {
+export class GalleryComponent implements OnInit{
 
   path: string = '../assets/gallery/forest.jpg';
   path1: string = '../assets/gallery/nature-wallpaper.jpg';
 
 
-  base:string = '../assets/gallery/'
+  base:string = '../../assets/gallery/'
 
-  paths1:string[] = [
+  imgs:string[] = [
     'forest.jpg',
     'nature-wallpaper.jpg',
     'trees-3.jpg',
@@ -28,4 +30,19 @@ export class GalleryComponent {
     'wellness.jpg'
   ]
 
+  ngOnInit():void {
+    for (let i = 0; i < this.imgs.length; i++) {
+      const element = this.imgs[i];
+      this.imgs[i] = this.base + this.imgs[i]
+      console.log(this.imgs[i]);
+       
+      
+    }
+    // this.imgs.forEach((path:string) => {
+    //   path = this.base + path
+             
+    // })
+    console.log(inner?.children);
+
+  }
 }
