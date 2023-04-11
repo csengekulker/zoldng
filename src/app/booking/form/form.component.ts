@@ -34,29 +34,7 @@ export class FormComponent implements OnInit {
   bookingId!:number
 
   autoSelect() {    
-    // this.pickedType = ''
-    this.pass.currentService.subscribe({
-      next: (sid:number) => {
-        this.pickedService = this.services[sid]
-      },
-      error: (err:any) => {
-        console.log(err);
-        
-      }
-    })
-
-    this.pass.currentType.subscribe({
-      next: (tid:number) => {
-        // this.selectType = tid
-        console.log('type id', tid);
-        this.typePicked(tid - 1)
-        
-      },
-      error: (err:any) => {
-        console.log(err);
-        
-      }
-    })
+    console.log("auto selection");
   }
 
   collectPersonalDetails(): any {

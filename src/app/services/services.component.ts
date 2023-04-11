@@ -23,16 +23,8 @@ export class ServicesComponent implements OnInit {
   fetchedServices !: any
   fetchedTypes!:any
 
-  // FIXME: autoload dur and price also when redirected
-
   onClick(event: any) {
-    let sid = event.path[7].id
-    let tid = event.path[3].id
-    
-    this.pass.setService(sid)
-    this.pass.setType(tid)
     this.router.navigate(['/booking'])
-
     this.emitter.onButtonClick()
 
   }
