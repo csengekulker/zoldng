@@ -16,33 +16,26 @@ export class GalleryComponent implements OnInit{
   base:string = '../../assets/gallery/'
 
   imgs:string[] = [
-    'forest.jpg',
-    'nature-wallpaper.jpg',
-    'trees-3.jpg',
-    'trees.jpg'
-  ]
+    'forest1080.jpg',
+    'nature-wallpaper1080.jpg',
+    'trees1080.jpg',
+    'trees.jpg', // sima trees.jpgbol 1080
 
-  paths2:string[] = [
     'essential-oil.jpg',
     'glass1920.jpg',
     'massage.jpg',
     'oil.jpg',
-    'wellness.jpg'
+
+    'butterbur.jpg',
+    'wellness.jpg',
+    'clover.jpg',
+    'flower.jpg'
   ]
 
   ngOnInit():void {
     for (let i = 0; i < this.imgs.length; i++) {
       const element = this.imgs[i];
       this.imgs[i] = this.base + this.imgs[i]
-      console.log(this.imgs[i]);
-       
-      
     }
-    // this.imgs.forEach((path:string) => {
-    //   path = this.base + path
-             
-    // })
-    console.log(inner?.children);
-
   }
 }

@@ -12,12 +12,12 @@
       </div>
 
       <div class="  mb-4 form-floating">
-        <input formControlName="email" type="text" id="email" class="form-control" placeholder="Your email">
+        <input formControlName="email" type="text" id="emailInput" class="form-control" placeholder="Your email">
         <label for="email" class="">E-mail cím</label>
       </div>
 
       <div class=" mb-4 form-floating">
-        <input formControlName="subject" type="text" id="subject" class="form-control" placeholder="Subject">
+        <input formControlName="subject" type="text" id="subjectInput" class="form-control" placeholder="Subject">
         <label for="subject" class="">Tárgy</label>
       </div>
 
@@ -25,20 +25,18 @@
         <div class="mb-4">
           <div class="md-form w-5">
             <h4>Az üzeneted</h4>
-            <textarea formControlName="message" id="message" class="form-control" cols="20" rows="10"></textarea>
+            <textarea formControlName="message" id="messageInput" class="form-control" cols="20" rows="10"></textarea>
           </div>
         </div>
       </div>
 
       <div class="text-center text-md-left">
-        <button id="msg" type="submit" data-bs-toggle="modal" data-bs-target="#messageSent" class="btn send w-100 btn-lg ">Küldés</button>
+        <button id="msg" type="submit" data-bs-toggle="modal" data-bs-target="#messageSent"  class="btn send w-100 btn-lg ">Küldés</button>
       </div>
     </form>
   </div>
 </div>
 
-
-<!-- Modal id="messageSent" if data success, reset also-->
 <div class="modal fade" id="messageSent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

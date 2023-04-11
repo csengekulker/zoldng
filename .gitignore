@@ -10,9 +10,12 @@
 
 # Testing
 /test/**/*.png
+/test/**/*.log
 log.html
 output.xml
 report.html
+
+interactive_console_output.xml
 
 # Node
 /node_modules

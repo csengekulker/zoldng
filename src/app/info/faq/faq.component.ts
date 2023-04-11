@@ -7,15 +7,11 @@ import faqJson from './faq.json'
   styleUrls: ['./faq.component.scss']
 })
 export class FaqComponent implements OnInit{
-  buttonText :string = " Információk"
 
-  faqs = faqJson.faqs
+  faqs!:any
 
-  ngOnInit(): void { 
-    this.faqs.forEach((f:any) => {
-      console.log(f);
-      
-    })
+  ngOnInit(): void {
+    this.faqs = faqJson.faqs
   }
 
 }
