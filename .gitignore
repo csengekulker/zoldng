@@ -6,7 +6,10 @@
 /out-tsc
 /bazel-out
 *.txt
+
+# docs
 *.odt#
+docs/**/~$v**.docx
 
 # Testing
 /test/**/*.png
