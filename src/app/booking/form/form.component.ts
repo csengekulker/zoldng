@@ -116,9 +116,9 @@ export class FormComponent implements OnInit {
 
     let clientData = this.collectPersonalDetails()
     console.log(clientData)
-    // modal.innerHTML = ''
 
     if (target.accept == false && modal) {
+      modal.innerHTML = ''
       modal.innerHTML = 'Kérjük, fogadd el a feltételeket.'
     } else {  
 
@@ -148,7 +148,8 @@ export class FormComponent implements OnInit {
             error: (err: any) => {
               console.log(err);
               
-              if (modal !=null) {                
+              if (modal !=null) {   
+                modal.innerHTML = ''             
                 let e: keyof typeof err.error.message
                 for (e in err.error.message) {
                   let v = err.error.message[e]
