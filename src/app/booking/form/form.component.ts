@@ -112,7 +112,6 @@ export class FormComponent implements OnInit {
     const target = this.form.value
     const modal = document.querySelector('.modal-body') 
     const header = document.querySelector('.modal-title')
-    const submit = document.querySelector('.submitBtn')
 
     let clientData = this.collectPersonalDetails()
     console.log(clientData)
@@ -137,11 +136,10 @@ export class FormComponent implements OnInit {
           
           this.api.sendReservation(bookingData).subscribe({
             next: (data:any) => {
-              if (data.success && header && modal && submit) {
+              if (data.success && header && modal) {
                 this.bookingId = data.data.id
                 header.innerHTML = "Sikeres foglalás"
                 modal.innerHTML = 'Check your email'
-                submit.remove()
                 this.form.reset()
               }
             },
