@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators as V } from '@angular/forms';
 import { EmitterService } from 'src/app/shared/emitter.service';
 import { ApiService } from 'src/app/shared/api.service';
-import { PassService } from 'src/app/shared/pass.service';
 
 @Component({
   selector: 'booking-form',
@@ -13,7 +12,6 @@ export class FormComponent implements OnInit {
 
   constructor(
     private api: ApiService,
-    private pass: PassService,
     private emitter: EmitterService,
     private build: FormBuilder) { }
 
@@ -26,7 +24,6 @@ export class FormComponent implements OnInit {
   appointments!: any
   fitAppointments: any[] = []
 
-  // aptId!: number
   pickedService: any = ''
   pickedType: any = ''
   pickedApt:any = ''

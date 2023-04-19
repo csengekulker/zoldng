@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-const inner = document.querySelector('.carousel-inner')
-
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -19,7 +17,7 @@ export class GalleryComponent implements OnInit{
     'forest1080.jpg',
     'nature-wallpaper1080.jpg',
     'trees1080.jpg',
-    'trees.jpg', // sima trees.jpgbol 1080
+    'trees.jpg',
 
     'essential-oil.jpg',
     'glass1920.jpg',

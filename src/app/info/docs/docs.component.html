@@ -6,14 +6,12 @@
         <hr class="border border-2 opacity-50 border-success">
 
         <ul class="nav justify-content-center row text-center list-group">
-            <a role="button" class=" docs-list-item text-decoration-none text-reset list-group-item " href="/info/docs#lists">
-                Javallatok és ellenjavallatok
-            </a>
-            <a role="button" class=" docs-list-item text-decoration-none text-reset list-group-item" href="/info/docs#terms">
-                Általános Szerződési Feltételek
-            </a>
-            <a role="button" class=" docs-list-item text-decoration-none text-reset list-group-item " href="/info/docs#privacy">
-                Adatkezelési Tájékoztató
+            <a 
+            *ngFor="let each of docs.menu"
+            role="button" 
+            class="docs-list-item text-decoration-none text-reset list-group-item" 
+            href="/info/docs#{{each.ref}}">
+                {{each.text}}
             </a>
         </ul>
     </div>

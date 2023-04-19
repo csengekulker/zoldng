@@ -3,7 +3,6 @@ import { ApiService } from '../shared/api.service';
 import servicesJson from './services.json'
 import { Router } from '@angular/router';
 import { EmitterService } from '../shared/emitter.service';
-import { PassService } from '../shared/pass.service';
 
 @Component({
   selector: 'app-services',
@@ -14,7 +13,6 @@ export class ServicesComponent implements OnInit {
 
   constructor(
     private api: ApiService,
-    private pass: PassService,
     private emitter: EmitterService,
     private router: Router
   ) { }

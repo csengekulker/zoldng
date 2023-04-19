@@ -1,4 +1,18 @@
 {
+    "menu": [
+        {
+            "text": "Javallatok és ellenjavallatok",
+            "ref": "lists"
+        },
+        {
+            "text": "Általános Szerződési Feltételek",
+            "ref": "terms"
+        },
+        {
+            "text": "Adatkezelési Tájékoztató",
+            "ref": "privacy"
+        }
+    ],
     "indicated": [
         "anyagcsere folyamatok fokozása",
         "az életkor előrehaladtával bekövetkező izomtömeg vesztés lassítása",
@@ -51,7 +65,7 @@
         "A fenti javallatokat / ellenjavallatokat elolvastam, azokat megértettem. A kezelésemmel kapcsolatban a szükséges tájékoztatást megkaptam, arra vonatkozóan több kérdésem nincs.",
         "Kijelentem, hogy a felsorolt listából egyetlen általam ismert panasszal, tünettel nem rendelkezem.",
         "Megértettem a kezeléssel kapcsolatos kockázatok fogalmát, esetleges előnyeit és hátrányait.",
-        "A fenti tények gondos mérlegelése után arra a következtetésre jutottam, hogy a masszázs szolgáltatás elvégzésére felkérem…",
+        "A fenti tények gondos mérlegelése után a masszázs szolgáltatás elvégzésére felkérem a terapeutát.",
         "Kijelentem, hogy semmilyen általam ismert, eltitkolt betegségem nincs.",
         "Tisztában vagyok az előzetesen (akár online űrlapon keresztül) lefoglalt kezelésemnek pontos idejével, időpontjával, annak részleteivel. A csúszások elkerülése érdekében az időpontom kezdeténél 5-10 perccel hamarabb/később nem jelenek meg. Elfogadom, hogy a kezelési idő betartatására a kezelőm jogosult. A kezelési időbe természetesen az előkészületek beletartoznak.",
         "Lemondási lehetőség legfeljebb 24 órával a kezelés időpontja előtt lehetséges. Ilyen esetben a kezelés áttehető egy másik időpontra vagy a kifizetett alkalmat visszafizetjük.",
@@ -68,6 +82,6 @@
         "Az Ön előzetes tájékoztatáson alapuló és önkéntes hozzájárulása alapján és csakis a szükséges mértékben és minden esetben célhoz kötötten kezeljük, azaz gyűjtjük, rögzítjük, rendszerezzük, tároljuk és felhasználjuk.",
         "Egyes esetekben az Ön adatainak kezelése jogszabályi előírásokon alapul és kötelező jellegű, ilyen esetekben erre a tényre külön felhívjuk az Ön figyelmét.",
         "Harmadik fél számára soha nem adjuk ki a személyes adatokat.",
-        "A lakcímed megadása a kezelés elvégeztét követően a számla kiállítása céljából szükséges."
+        "A lakcím megadása a kezelés elvégeztét követően a számla kiállítása céljából szükséges."
     ]
 }

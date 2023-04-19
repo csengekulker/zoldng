@@ -8,7 +8,6 @@ import iconsJson from './icons.json'
 })
 export class IconsComponent implements OnInit{
   icons!: Icon[]
-  alttext:string = 'alttext'
 
   ngOnInit(): void {
     

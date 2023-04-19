@@ -36,4 +36,4 @@ npm start
 
 Böngészőben a http://localhost:4200 címen megtekinthető a webes kliens.
 
-> Figyelem! Az oldalon szerepelnek adatbázisból hívott, statikus tartalmak. Figyelj, hogy megtekintéskor külön terminál ablakban fusson a REST API kiszolgáló.
+> Figyelem! Az oldalon szerepelnek adatbázisból hívott, statikus tartalmak. Figyelj, hogy megtekintéskor külön terminál ablakban fusson a REST API kiszolgáló. Ehhez hozzáférést [ezen a linken](https://github.com/csengekulker/ng-api) találsz.

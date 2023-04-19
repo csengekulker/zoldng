@@ -10,8 +10,6 @@ export class FeatureComponent implements OnInit {
 
   features!: any
 
-  path: string = '../assets/images/vert.png';
-
   ngOnInit(): void {
 
     this.features = featuresJson

@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   path: string = '../assets/images/main.png';
-  alttext: string = 'A kép leírása';
   
   ngOnInit(): void { }
 

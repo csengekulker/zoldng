@@ -6,28 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavigationComponent implements OnInit {
-  buttons!: string[][]
-
-  ngOnInit(): void {
-
-    this.buttons = [
-      [
-        'Főoldal',
-        ''
-      ],
-      [
-        'Masszázsok',
-        '/services'
-      ],
-      [
-        'Foglalás',
-        '/booking'
-      ],
-      [
-        'Galéria',
-        '/gallery'
-      ]
+  buttons = [
+    [
+      'Főoldal',
+      ''
+    ],
+    [
+      'Masszázsok',
+      '/services'
+    ],
+    [
+      'Foglalás',
+      '/booking'
+    ],
+    [
+      'Galéria',
+      '/gallery'
     ]
-  }
+  ]
+
+  ngOnInit(): void {}
 
 }

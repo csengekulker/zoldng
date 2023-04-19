@@ -6,11 +6,11 @@
   <p>Az alábbi linkeket követve további hasznos információkat, dokumentumokat, felmerülő kérdéseidre válaszokat találhatsz. <br> Ha ezután is marad amit megkérdeznél, kérlek vedd fel velem a kapcsolatot. </p>
 
   <div class="list-group col-md-4">
-    <a href="/info/faq" class="list-group-item list-group-item-action">Gyakran Ismételt Kérdések</a>
-    <a href="/info/pricing" class="list-group-item list-group-item-action">Árlista</a>
-    <a href="/info/docs" class="list-group-item list-group-item-action">Dokumentumok</a>
-    <a href="/info/certs" class="list-group-item list-group-item-action">Tanúsítványok</a>
-    <a href="/info/license" class="list-group-item list-group-item-action">Licensz</a>
+
+    <a 
+    *ngFor="let each of info"
+    href="/info/{{each.ref}}" 
+    class="list-group-item list-group-item-action">{{each.text}}</a>
 
   </div>
 
