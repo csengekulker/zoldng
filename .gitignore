@@ -18,6 +18,7 @@ docs/**/.~lock.*
 log.html
 output.xml
 report.html
+selenium-screenshot-*.png
 
 interactive_console_output.xml
 
